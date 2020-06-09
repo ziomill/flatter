@@ -21,14 +21,15 @@ Use [Docker](https://www.docker.com) to run builded image as Container
 Run process will start new Container, binding 10001 host port to 10001 Container port.
 
 ```bash
-docker run --name flatter -i -d --rm -p 10000:10000 flatter:1.0.0
+docker run --name flatter -i -d --rm -p 10001:10001 flatter:1.0.0
 ```
 ## Usage
 
 An HTTP Server listens on:
-* Port   : 10001
-* URL    : http://localhost:10001/flat
-* Method : POST
+* Port    : 10001
+* URL     : http://localhost:10001/flat
+* Method  : POST
+* Headers : Content-Type=application/json Accept=application/json
 Use an HTTP Client to give it a try.
 
 ### Request example
@@ -63,7 +64,7 @@ Use an HTTP Client to give it a try.
 ]
 ```
 
-![picture alt](https://i.ibb.co/84LMFwY/Chat-Screen.png "Chat Preview")
+![picture alt](https://i.ibb.co/mSZhbvX/flatter.png "Flatter Http Client Preview")
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

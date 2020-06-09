@@ -27,5 +27,5 @@ RUN mvn clean install
 
 WORKDIR /usr/flatter/target
 CMD ["sh", "-c", "java -jar flatter.jar"]
-# Expose Server on port 10000
-EXPOSE 10000
+# Expose Server on port 10001
+EXPOSE 10001
