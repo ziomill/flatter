@@ -29,7 +29,8 @@ An HTTP Server listens on:
 * Port    : 10001
 * URL     : http://localhost:10001/flat
 * Method  : POST
-* Headers : Content-Type=application/json Accept=application/json
+* Headers : **Content-Type=application/json** || **Accept=application/json**
+
 Use an HTTP Client to give it a try.
 
 ### Request example
