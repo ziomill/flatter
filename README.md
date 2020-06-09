@@ -31,6 +31,7 @@ An HTTP Server listens on:
 * Method : POST
 Use an HTTP Client to give it a try.
 
+### Request example
 ```json
 [
    1,
