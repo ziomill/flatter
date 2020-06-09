@@ -12,7 +12,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Libs Versions -->
         <java.version>11</java.version>
+        <org.json.version>20200518</org.json.version>
         <junit.version>5.6.2</junit.version>
+        <http.client.version>4.5.12</http.client.version>
     </properties>
 
     <build>
@@ -47,9 +49,20 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${org.json.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${http.client.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
