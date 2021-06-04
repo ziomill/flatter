@@ -14,7 +14,7 @@
         <java.version>11</java.version>
         <org.json.version>20200518</org.json.version>
         <junit.version>5.6.2</junit.version>
-        <http.client.version>4.5.12</http.client.version>
+        <http.client.version>4.5.13</http.client.version>
     </properties>
 
     <build>
